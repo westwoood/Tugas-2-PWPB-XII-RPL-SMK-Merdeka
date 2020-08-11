@@ -1,0 +1,15 @@
+# <?php
+$kategori = 'Buah asem';
+switch ($kategori)
+{
+  case 'Buah berduri' :
+    echo $kategori . ' adalah ','sirsak, ','nagka<br/>';
+    break;
+  case 'Buah asam' :
+    echo $kategori . ' adalah ',' strawberry ',' anggur ',' jeruk nipis ',' jeruk<br/>';
+    break;
+  case 'Buah tropis' :
+    echo $kategori . ' adalah ',' nanas ',' jambu ',' mangga ',' rambutan<br/>';
+    break;
+}
+?>
