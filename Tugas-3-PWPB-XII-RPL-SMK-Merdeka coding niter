@@ -1,0 +1,14 @@
+function getArticle(){
+    $this->db->select('*');
+    $this->db->from('test');
+    $this->db->where('author','David');
+    $this->db->order_by('id', 'DESC');
+    $query=$this->db->get();
+
+    if($query->num_rows() > 0) {
+        foreach ($query->result() as $row) {
+            $data[] = $row;
+        }
+        return $data;
+    }$query->free_result();
+}
